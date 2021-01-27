@@ -1,12 +1,6 @@
 use Restaurant
 go
 
-CREATE PROC spDeleteExpired
-AS 
-DELETE FROM ITEM_EXP
-where exp <GETDATE();
-
-GO
 
 ---------------------------------------------
 create PROC spQuantFor
